@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org).
 - Add cross-platform support for Windows, Linux, and macOS
 - Add CI/CD pipeline for building and publishing binaries via GitHub Actions
 - Embed Windows icon using `rcedit`
-- Publish crate to [crates.io](https://crates.io/crates/rexor) with [documentation](https://doc.rs/rexor)
+- Publish crate to [crates.io](https://crates.io/crates/rexor) with [documentation](https://docs.rs/rexor)
 
 [Unreleased]: https://github.com/ree-verse/ReXOR/compare/v0.1.0...HEAD
 [0.1.0]: https://github.com/ree-verse/ReXOR/releases/tag/v0.1.0
