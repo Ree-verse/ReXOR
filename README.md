@@ -52,7 +52,7 @@ Add `rexor` as a dependency in `Cargo.toml`:
 
 ```toml
 [dependencies]
-rexor = "0.1.0"
+ReXOR = "0.1.0"
 ```
 
 ## Parameters
