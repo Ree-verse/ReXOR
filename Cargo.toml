@@ -1,0 +1,29 @@
+[package]
+name = "ReXOR"
+version = "0.1.0"
+authors = ["Ree-verse <reeversesoft@gmail.com>"]
+description = "Cross-platform library with CLI app for encoding and decoding files using XOR encryption"
+repository = "https://github.com/Ree-verse/ReXOR"
+homepage = "https://github.com/Ree-verse/ReXOR"
+documentation = "https://docs.rs/rexor"
+license = "MIT"
+readme = "README.md"
+rust-version = "1.85.0"
+keywords = ["CLI", "encryption", "decryption", "security", "XOR"]
+categories = ["command-line-interface", "cryptography", "encoding", "security"]
+edition = "2024"
+
+[profile.release]
+lto = true
+opt-level = 'z'
+codegen-units = 1
+strip = true
+
+[lib]
+name = "rexor"
+
+[dependencies]
+clearscreen = "4.0.2"
+colored = "3"
+rfd = "0.15.4"
+rpassword = "7.4.0"

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="512" height="512" viewBox="0 0 512 512">
+
+  <defs>
+    <!-- subtle gradient for depth -->
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8a42"/>
+      <stop offset="1" stop-color="#c14a00"/>
+    </linearGradient>
+
+    <style>
+      .file { fill: url(#g1); stroke: #3b3b3b; stroke-width: 6; stroke-linejoin: round; }
+      .fold { fill: rgba(255,255,255,0.9); opacity: 0.9; }
+      .lock-body { fill: #ffffff; stroke: #3b3b3b; stroke-width: 5; }
+      .lock-shackle { fill: none; stroke: #3b3b3b; stroke-width: 6; stroke-linecap: round; }
+      .xor { font-weight: 700; fill: #3b3b3b; font-size: 88px; }
+    </style>
+  </defs>
+
+  <!-- file icon -->
+  <g transform="translate(72,64)">
+    <path class="file" d="
+      M 0 32
+      L 0 320
+      A 24 24 0 0 0 24 344
+      L 264 344
+      A 24 24 0 0 0 288 320
+      L 288 88
+      L 192 0
+      L 24 0
+      A 24 24 0 0 0 0 24
+      Z" />
+
+    <!-- folded corner -->
+    <path class="fold" d="M 192 0 L 192 88 L 288 88 Z" />
+
+    <!-- subtle binary marks to hint "file content" -->
+    <g transform="translate(34,110)" opacity="0.12">
+      <rect x="0" y="0" width="180" height="8" rx="4" />
+      <rect x="0" y="22" width="140" height="8" rx="4" />
+      <rect x="0" y="44" width="160" height="8" rx="4" />
+      <rect x="0" y="66" width="120" height="8" rx="4" />
+    </g>
+
+    <!-- xor symbol centered -->
+    <text class="xor" x="72" y="240" text-anchor="middle" dominant-baseline="middle">⊕</text>
+
+    <!-- padlock (bottom-right of file) -->
+    <g transform="translate(180,228)">
+      <rect class="lock-body" x="0" y="28" width="76" height="56" rx="8" ry="8"/>
+      <path class="lock-shackle" d="M 14 28
+         v-8
+         a24 24 0 0 1 48 0
+         v8" />
+      <!-- small keyhole -->
+      <circle cx="38" cy="56" r="6" fill="#3b3b3b"/>
+      <rect x="36" y="62" width="4" height="12" rx="1" ry="1" fill="#3b3b3b"/>
+    </g>
+  </g>
+
+</svg>
