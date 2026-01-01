@@ -25,5 +25,5 @@ name = "rexor"
 [dependencies]
 clearscreen = "4.0.2"
 colored = "3"
-rfd = "0.15.4"
+rfd = "0.16.0"
 rpassword = "7.4.0"
