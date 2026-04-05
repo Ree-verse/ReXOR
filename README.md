@@ -211,6 +211,11 @@ The CLI application uses several crates to improve the user experience:
 
 ---
 
+## Credits
+
+This project was inspired by [GoFileEncoder](https://github.com/eliotttak/GoFileEncoder).
+Many thanks to [eliotttak](https://github.com/eliotttak) for the inspiration.
+
 ## Star History
 
 <a href="https://star-history.com/#Ree-verse/ReXOR&Timeline">
